@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleDevelopmentRegion</key><string>en</string>
+    <key>CFBundleExecutable</key><string>$(EXECUTABLE_NAME)</string>
+    <key>CFBundleIdentifier</key><string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+    <key>CFBundleInfoDictionaryVersion</key><string>6.0</string>
+    <key>CFBundleName</key><string>Rokid Teams</string>
+    <key>CFBundlePackageType</key><string>APPL</string>
+    <key>CFBundleShortVersionString</key><string>1.0</string>
+    <key>CFBundleVersion</key><string>1</string>
+    <key>LSRequiresIPhoneOS</key><true/>
+    <!-- OAuth redirect URI scheme -->
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleURLName</key><string>com.rokid.teamshud.auth</string>
+            <key>CFBundleURLSchemes</key>
+            <array><string>rokidteams</string></array>
+        </dict>
+    </array>
+    <key>NSLocalNetworkUsageDescription</key>
+    <string>Rokid Teams serves Microsoft Teams data to Rokid AR glasses on the local network via TCP :8098.</string>
+    <key>NSBonjourServices</key>
+    <array><string>_http._tcp</string></array>
+    <key>UIBackgroundModes</key>
+    <array><string>fetch</string><string>processing</string></array>
+    <key>UILaunchScreen</key><dict/>
+    <key>UISupportedInterfaceOrientations</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+</dict>
+</plist>

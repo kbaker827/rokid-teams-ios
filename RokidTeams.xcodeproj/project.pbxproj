@@ -1,0 +1,71 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1; classes = {}; objectVersion = 56;
+	objects = {
+/* Begin PBXBuildFile section */
+		A001 = {isa = PBXBuildFile; fileRef = F001; };
+		A002 = {isa = PBXBuildFile; fileRef = F002; };
+		A003 = {isa = PBXBuildFile; fileRef = F003; };
+		A004 = {isa = PBXBuildFile; fileRef = F004; };
+		A005 = {isa = PBXBuildFile; fileRef = F005; };
+		A006 = {isa = PBXBuildFile; fileRef = F006; };
+		A007 = {isa = PBXBuildFile; fileRef = F007; };
+		A008 = {isa = PBXBuildFile; fileRef = F008; };
+		A009 = {isa = PBXBuildFile; fileRef = F009; };
+		A010 = {isa = PBXBuildFile; fileRef = F010; };
+		A011 = {isa = PBXBuildFile; fileRef = F011; };
+/* End PBXBuildFile section */
+/* Begin PBXFileReference section */
+		F001 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RokidTeamsApp.swift;     sourceTree = "<group>"; };
+		F002 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsModels.swift;       sourceTree = "<group>"; };
+		F003 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift;          sourceTree = "<group>"; };
+		F004 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsAuthManager.swift;  sourceTree = "<group>"; };
+		F005 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsAPIClient.swift;    sourceTree = "<group>"; };
+		F006 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassesServer.swift;     sourceTree = "<group>"; };
+		F007 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsViewModel.swift;    sourceTree = "<group>"; };
+		F008 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift;       sourceTree = "<group>"; };
+		F009 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsHomeView.swift;     sourceTree = "<group>"; };
+		F010 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassesPreviewView.swift; sourceTree = "<group>"; };
+		F011 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift;      sourceTree = "<group>"; };
+		PROD  = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RokidTeams.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		PLIST = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+/* Begin PBXGroup section */
+		ROOT    = {isa = PBXGroup; children = (SRCROOT, PRODUCTS); sourceTree = "<group>"; };
+		PRODUCTS = {isa = PBXGroup; children = (PROD); name = Products; sourceTree = "<group>"; };
+		SRCROOT = {isa = PBXGroup; children = (APPGRP, DATAGRP, SVCGRP, GLSGRP, VMGRP, UIGRP); path = RokidTeams; sourceTree = "<group>"; };
+		APPGRP  = {isa = PBXGroup; children = (F001, PLIST); path = App;       sourceTree = "<group>"; };
+		DATAGRP = {isa = PBXGroup; children = (F002, F003);  path = Data;      sourceTree = "<group>"; };
+		SVCGRP  = {isa = PBXGroup; children = (F004, F005);  path = Service;   sourceTree = "<group>"; };
+		GLSGRP  = {isa = PBXGroup; children = (F006);        path = Glasses;   sourceTree = "<group>"; };
+		VMGRP   = {isa = PBXGroup; children = (F007);        path = ViewModel; sourceTree = "<group>"; };
+		UIGRP   = {isa = PBXGroup; children = (F008, F009, F010, F011); path = UI; sourceTree = "<group>"; };
+/* End PBXGroup section */
+/* Begin PBXNativeTarget section */
+		TARGET = {isa = PBXNativeTarget; buildConfigurationList = BLDCFGLIST; buildPhases = (SRCPHASE, FWKPHASE, RESPHASE); buildRules = (); dependencies = (); name = RokidTeams; productName = RokidTeams; productReference = PROD; productType = "com.apple.product-type.application"; };
+/* End PBXNativeTarget section */
+/* Begin PBXProject section */
+		PROJECT = {isa = PBXProject; attributes = {BuildIndependentTargetsInParallel = 1; LastSwiftUpdateCheck = 1500; LastUpgradeCheck = 1500; TargetAttributes = {TARGET = {CreatedOnToolsVersion = 15.0;};};}; buildConfigurationList = PROJCFGLIST; compatibilityVersion = "Xcode 14.0"; developmentRegion = en; hasScannedForEncodings = 0; knownRegions = (en, Base); mainGroup = ROOT; productRefGroup = PRODUCTS; projectDirPath = ""; projectRoot = ""; targets = (TARGET); };
+/* End PBXProject section */
+/* Begin PBXSourcesBuildPhase section */
+		SRCPHASE = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A001, A002, A003, A004, A005, A006, A007, A008, A009, A010, A011); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXSourcesBuildPhase section */
+/* Begin PBXFrameworksBuildPhase section */
+		FWKPHASE = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+/* Begin PBXResourcesBuildPhase section */
+		RESPHASE = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXResourcesBuildPhase section */
+/* Begin XCBuildConfiguration section */
+		DBGCFG = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; COPY_PHASE_STRIP = NO; DEBUG_INFORMATION_FORMAT = dwarf; GCC_OPTIMIZATION_LEVEL = 0; GCC_PREPROCESSOR_DEFINITIONS = ("DEBUG=1","$(inherited)"); IPHONEOS_DEPLOYMENT_TARGET = 17.0; ONLY_ACTIVE_ARCH = YES; SDKROOT = iphoneos; SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)"; SWIFT_OPTIMIZATION_LEVEL = "-Onone";}; name = Debug; };
+		RELCFG = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; COPY_PHASE_STRIP = NO; DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym"; ENABLE_NS_ASSERTIONS = NO; IPHONEOS_DEPLOYMENT_TARGET = 17.0; SDKROOT = iphoneos; SWIFT_COMPILATION_MODE = wholemodule; VALIDATE_PRODUCT = YES;}; name = Release; };
+		TDBG = {isa = XCBuildConfiguration; buildSettings = {ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; BUNDLE_IDENTIFIER = com.rokid.teamshud; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; ENABLE_PREVIEWS = YES; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = RokidTeams/App/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 17.0; MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.rokid.teamshud; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2";}; name = Debug; };
+		TREL = {isa = XCBuildConfiguration; buildSettings = {ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; BUNDLE_IDENTIFIER = com.rokid.teamshud; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; ENABLE_PREVIEWS = YES; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = RokidTeams/App/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 17.0; MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.rokid.teamshud; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2";}; name = Release; };
+/* End XCBuildConfiguration section */
+/* Begin XCConfigurationList section */
+		PROJCFGLIST = {isa = XCConfigurationList; buildConfigurations = (DBGCFG, RELCFG); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		BLDCFGLIST  = {isa = XCConfigurationList; buildConfigurations = (TDBG, TREL);     defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+/* End XCConfigurationList section */
+	};
+	rootObject = PROJECT;
+}
