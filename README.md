@@ -1,5 +1,11 @@
 # Rokid Teams HUD
 
+
+> **🔵 Connectivity Update — May 2025**
+> The glasses connection has been migrated from **raw TCP sockets** to
+> **Bluetooth via the Rokid AI glasses SDK** (`pod 'RokidSDK' ~> 1.10.2`).
+> No Wi-Fi port forwarding is needed. See **SDK Setup** below.
+
 iOS app that bridges **Microsoft Teams** with **Rokid AR glasses** — see your messages, meetings, and presence on your heads-up display in real time.
 
 ```
@@ -9,7 +15,7 @@ iOS app that bridges **Microsoft Teams** with **Rokid AR glasses** — see your 
          ↓  Microsoft Graph API v1.0
   graph.microsoft.com
          ↓  messages · meetings · presence
-  iPhone ──TCP :8098──▶ Rokid Glasses (live HUD)
+  iPhone ──Bluetooth/RokidSDK──▶ Rokid Glasses (live HUD)
 ```
 
 ## What appears on the glasses
