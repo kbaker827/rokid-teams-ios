@@ -33,7 +33,7 @@ Instant alerts fire on your glasses for:
 - **Urgent** marked messages
 - Meetings starting in the next N minutes (configurable)
 
-## Glasses → Phone commands (TCP :8098)
+## Voice commands from the glasses
 
 | Command | Result |
 |---------|--------|
@@ -106,7 +106,7 @@ Click **Grant admin consent** if you're an admin, or ask your IT admin to grant 
 
 ### Step 3 — Build and run
 
-1. Open `RokidTeams.xcodeproj` in Xcode 15+
+1. Open `RokidTeams.xcworkspace` in Xcode 15+ (after running `pod install`) 15+
 2. Set your team in Signing & Capabilities
 3. Build and run on iPhone (iOS 17+)
 4. In **Settings**: paste your Client ID, set Tenant ID (use `common` for personal accounts)
@@ -141,4 +141,4 @@ Uses [Microsoft Graph v1.0](https://learn.microsoft.com/en-us/graph/overview) wi
 - Xcode 15+
 - Microsoft account (personal or work/school)
 - Azure App Registration (free — see Setup above)
-- Rokid AR glasses on the same Wi-Fi (optional — app works standalone as a Teams dashboard)
+- Rokid AI glasses (paired via Bluetooth — no Wi-Fi needed) (optional — app works standalone as a Teams dashboard)
